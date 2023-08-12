@@ -7,22 +7,47 @@ html {
   html {
     font-size: 16px;
   }
+  .nav-item{
+      margin-top:0.5em;
+      margin-bottom:0.5em;
+  }
+}
+@media (max-width: 999px) {
     .navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom-left-radius: 30%;
-        border-bottom-right-radius: 30%;
-        width: max-content;
-        margin: auto;
-        margin-top: 1em;
-        display: flex;
-        min-width: 50vh;
-        min-height: 5vh;
+        min-width: auto !important; /* Убираем ограничение на минимальную ширину */
+        width: 100% !important; /* Занимаем всю ширину экрана */
+        min-height: 4.5em;
+        margin: 0;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        padding-top: 1em !important;
+        padding-bottom: 1em !important;
+    }
+
+    .navbar-toggler[aria-expanded="true"] ~ .logo-wrapper {
+        top: 2em !important; /* Измените значение по вашему вкусу */
+    }
+    .navbar-collapse {
+        width: 100%; /* Убираем ограничение на ширину */
+    }
+
+
+    .navbar-collapse.collapse {
+        display: none !important;
     }
     .navbar-nav {
-        margin: 0.3em 0;
+        flex-direction: row;
     }
+    /* Отображаем ссылки в раскрытом тогглере */
+    .navbar-toggler[aria-expanded="true"] ~ .navbar-collapse.collapse {
+        display: block !important;
+    }
+
+
+    .navbar-collapse {
+        margin-top: 1em;
+    }
+
 }
 
 html {
@@ -38,9 +63,6 @@ h1, a, div, p {
     color: rgb(0,255,255);
     height: 100%;
 }
-.nav-link {
-    color: rgb(0,255,255) !important;
-}
 
 .backgroundCanvas {
     position: fixed;
@@ -50,22 +72,55 @@ h1, a, div, p {
     height: 100%;
     z-index: -1;
 }
-.navbar-toggler {
-    z-index: 1000;
-}
 .navbar-toggler-icon {
     background-image: url("../img/navbar_toggler.svg") !important;
 }
+.nav-link {
+    color: rgb(0, 255, 255) !important;
+}
 
+/* Навигационная панель */
 .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    width: max-content;
+    margin: auto;
+    margin-top: 1em;
+    min-width: 50vh;
     border: 2px solid rgb(0, 255, 255);
     position: relative;
     z-index: 1;
     padding: 0;
+    overflow: visible;
+}
+.navbar-nav {
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Добавьте этот стиль для скрытия ссылок на мобильных устройствах */
+}
+
+.navbar-collapse {
+    width: 100%; /* Добавьте этот стиль для скрытия ссылок на мобильных устройствах */
+    text-align: center; /* Добавьте этот стиль для выравнивания ссылок на мобильных устройствах */
 }
 .nav-item {
     margin-left: 3em;
     margin-right: 3em;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height: 5em;
 }
 
 .circle-logo {
@@ -77,9 +132,6 @@ h1, a, div, p {
     justify-content: center;
     align-items: center;
     border: 2px solid rgb(0, 255, 255);
-    z-index: 2;
-    position: absolute;
-    flex-shrink: 0;
 }
 
     .circle-logo img {

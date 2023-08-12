@@ -10,40 +10,37 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-<header>
-<nav class="navbar navbar-expand-lg navbar-dark">
 
-    <div  id="menuItems" class=" flex-grow-1mx-auto my-2 order-0 order-md-1 position-relative d-flex container d-flex justify-content-center align-items-center navbar-collapse dual-collapse2">
-        <!-- Ссылки на "Policy" и "Home", скрытые на больших экранах -->
-        <ul class="navbar-nav d-none d-lg-block" >
-            <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
-            </li>
-        </ul>
-
-
-        <div class="circle-logo">
-            <!-- Логотип всегда виден -->
-            <a class="mx-auto" href="#">
-                <img src="/img/DodoLogo.svg" alt="">
-            </a>
-        </div>
-
-        <ul class="navbar-nav d-none d-lg-block">
-            <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-page="/Privacy">Privacy</a>
-            </li>
-        </ul>
-
-        <!-- Кнопка разворачивания для мобильных экранов -->
-        <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-dar bg-black border-bottom box-shadow mb-3">
+            <div class="container">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               <div class="logo-wrapper">
+                    <div class="circle-logo">
+                    <!-- Логотип всегда виден -->
+                    <a class="mx-auto" href="#">
+                        <img src="/img/DodoLogo.svg" alt="">
+                    </a>
+                    </div>
+                </div>
 
 
-</header>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <canvas id="backgroundCanvas" class="backgroundCanvas"></canvas>
     <div class="content">
         <main role="main" class="pb-3">
