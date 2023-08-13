@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANARY!!!</title>
+    <link rel="stylesheet" href="/css/canary.css" asp-append-version="true" />
+</head>
+<body>
+
+    <button id="pressMe" style="margin: 0 auto;
+  display: block;">
+        Press Me
+    </button>
+
+    <div id="block" style="display: none;  width:100%; height:100%;>
+        <svg id="svg1" viewbox="0 0 700 700">
+
+            <g id="blob1">
+                <path fill="#76aae8" d="M20,20 Q700,20 510,680"></path>
+                <path fill="#87bdff" d="M510,680 Q10,400 20,20"></path>
+                <path fill="#87bdff" d="M50,680 Q700,700 350,10"></path>
+                <path fill="#76aae8" d="M350,10 Q150,20 50,680"></path>
+                <path fill="#76aae8" d="M0,350 Q350,600 600,350"></path>
+                <path fill="#76aae8" d="M0,350 Q350,100 600,350"></path>
+            </g>
+            <g id="blob2">
+                <path fill="#77d2e0" d="M20,500 Q20,0 600,20"></path>
+                <path fill="#87efff" d="M600,20 Q680,680 20,500"></path>
+            </g>
+
+            <g id="stick">
+                <!--line1 -->
+                <path stroke="#db7b14" stroke-width="20" d="M20,430 H320"></path>
+                <path stroke="#ab4d00" stroke-width="20" d="M160,430 H180"></path>
+                <path stroke="#ab4d00" stroke-width="20" d="M100,430 H20"></path>
+                <path stroke="#e45856" stroke-width="20" d="M40,430 H20"></path>
+                <!-- line2 -->
+                <path stroke="#db7b14" stroke-width="20" d="M20,450 H280"></path>
+                <path stroke="#f15c1c" stroke-width="20" d="M160,450 H200"></path>
+                <!-- line3 -->
+                <path stroke="#db7b14" stroke-width="20" d="M20,470 H240"></path>
+                <path stroke="#ab4d00" stroke-width="20" d="M120,470 H140"></path>
+                <path stroke="#ab4d00" stroke-width="20" d="M20,470 H60"></path>
+            </g>
+
+            <g id="parrot">
+                <!-- line1 -->
+                <path stroke="#de1900" stroke-width="20" d="M100,90 H120"></path>
+                <!-- line2 -->
+                <path stroke="#de1900" stroke-width="20" d="M120,110 H200"></path>
+                <!-- line3 -->
+                <path stroke="#de1900" stroke-width="20" d="M140,130 H160"></path>
+                <path stroke="#f53100" stroke-width="20" d="M160,130 H200"></path>
+                <path stroke="#de1900" stroke-width="20" d="M200,130 H240"></path>
+                <!-- line4 -->
+                <path stroke="#de1900" stroke-width="20" d="M120,150 H140"></path>
+                <path stroke="#f53100" stroke-width="20" d="M140,150 H240"></path>
+                <path stroke="#de1900" stroke-width="20" d="M240,150 H260"></path>
+                <!-- line4 -->
+                <path stroke="#de1900" stroke-width="20" d="M100,170 H120"></path>
+                <path stroke="#f53100" stroke-width="20" d="M120,170 H180"></path>
+                <path stroke="white" stroke-width="20" d="M180,170 H240"></path>
+                <path stroke="#ffcc23" stroke-width="20" d="M240,170 H260"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M260,170 H280"></path>
+                <!-- line5 -->
+                <path stroke="#de1900" stroke-width="20" d="M100,190 H120"></path>
+                <path stroke="#f53100" stroke-width="20" d="M120,190 H160"></path>
+                <path stroke="white" stroke-width="20" d="M160,190 H200"></path>
+                <path stroke="black" stroke-width="20" d="M200,190 H220"></path>
+                <path stroke="white" stroke-width="20" d="M220,190 H240"></path>
+                <path stroke="#ffcc23" stroke-width="20" d="M240,190 H260"></path>
+                <path stroke="#ffe39c" stroke-width="20" d="M260,190 H280"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M280,190 H300"></path>
+                <!-- line6 -->
+                <path stroke="#de1900" stroke-width="20" d="M80,210 H100"></path>
+                <path stroke="#f53100" stroke-width="20" d="M100,210 H160"></path>
+                <path stroke="#ffe39c" stroke-width="20" d="M160,210 H180"></path>
+                <path stroke="#ffb485" stroke-width="20" d="M180,210 H200"></path>
+                <path stroke="black" stroke-width="20" d="M200,210 H220"></path>
+                <path stroke="white" stroke-width="20" d="M220,210 H240"></path>
+                <path stroke="#ffcc23" stroke-width="20" d="M240,210 H280"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M280,210 H300"></path>
+                <!-- line7 -->
+                <path stroke="#de1900" stroke-width="20" d="M80,230 H100"></path>
+                <path stroke="#f53100" stroke-width="20" d="M100,230 H160"></path>
+                <path stroke="#ffe39c" stroke-width="20" d="M160,230 H180"></path>
+                <path stroke="#ffb485" stroke-width="20" d="M180,230 H220"></path>
+                <path stroke="white" stroke-width="20" d="M220,230 H240"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M240,230 H300"></path>
+                <!-- line8 -->
+                <path stroke="#de1900" stroke-width="20" d="M80,250 H100"></path>
+                <path stroke="#f53100" stroke-width="20" d="M100,250 H180"></path>
+                <path stroke="#ffe39c" stroke-width="20" d="M180,250 H240"></path>
+                <path stroke="#de1900" stroke-width="20" d="M240,250 H260"></path>
+                <!-- line9 -->
+                <path stroke="#0cb800" stroke-width="20" d="M80,270 H100"></path>
+                <path stroke="#fff423" stroke-width="20" d="M100,270 H120"></path>
+                <path stroke="#f53100" stroke-width="20" d="M120,270 H260"></path>
+                <path stroke="#de1900" stroke-width="20" d="M260,270 H280"></path>
+                <!-- line10 -->
+                <path stroke="#0cb800" stroke-width="20" d="M80,290 H100"></path>
+                <path stroke="#fff423" stroke-width="20" d="M100,290 H140"></path>
+                <path stroke="#f53100" stroke-width="20" d="M140,290 H200"></path>
+                <path stroke="#de1900" stroke-width="20" d="M200,290 H220"></path>
+                <path stroke="#f53100" stroke-width="20" d="M220,290 H280"></path>
+                <path stroke="#de1900" stroke-width="20" d="M280,290 H300"></path>
+                <!-- line11 -->
+                <path stroke="#3a6aff" stroke-width="20" d="M80,310 H100"></path>
+                <path stroke="#83e101" stroke-width="20" d="M100,310 H120"></path>
+                <path stroke="#fff423" stroke-width="20" d="M120,310 H160"></path>
+                <path stroke="#f53100" stroke-width="20" d="M160,310 H200"></path>
+                <path stroke="#de1900" stroke-width="20" d="M200,310 H220"></path>
+                <path stroke="#fff423" stroke-width="20" d="M220,310 H240"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M240,310 H280"></path>
+                <path stroke="#f53100" stroke-width="20" d="M280,310 H300"></path>
+                <path stroke="#de1900" stroke-width="20" d="M300,310 H320"></path>
+                <!-- line12 -->
+                <path stroke="#3a6aff" stroke-width="20" d="M80,330 H100"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M100,330 H120"></path>
+                <path stroke="#83e101" stroke-width="20" d="M120,330 H140"></path>
+                <path stroke="#fff423" stroke-width="20" d="M140,330 H200"></path>
+                <path stroke="#de1900" stroke-width="20" d="M200,330 H220"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M220,330 H240"></path>
+                <path stroke="#fff423" stroke-width="20" d="M240,330 H280"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M280,330 H320"></path>
+                <path stroke="#de1900" stroke-width="20" d="M320,330 H340"></path>
+                <!-- line13 -->
+                <path stroke="#3a6aff" stroke-width="20" d="M100,350 H120"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M120,350 H160"></path>
+                <path stroke="#83e101" stroke-width="20" d="M160,350 H220"></path>
+                <path stroke="#de1900" stroke-width="20" d="M220,350 H240"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M240,350 H280"></path>
+                <path stroke="#fff423" stroke-width="20" d="M280,350 H320"></path>
+                <path stroke="#de1900" stroke-width="20" d="M320,350 H340"></path>
+                <!-- line14 -->
+                <path stroke="#8621d9" stroke-width="20" d="M120,370 H160"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M160,370 H240"></path>
+                <path stroke="#de1900" stroke-width="20" d="M240,370 H320"></path>
+                <!-- line15 -->
+                <path stroke="black" stroke-width="20" d="M160,390 H180"></path>
+                <path stroke="#8621d9" stroke-width="20" d="M180,390 H240"></path>
+                <path stroke="black" stroke-width="20" d="M240,390 H260"></path>
+                <path stroke="#8621d9" stroke-width="20" d="M260,390 H280"></path>
+                <!-- line16 -->
+                <path stroke="#611f00" stroke-width="20" d="M140,410 H160"></path>
+                <path stroke="#611f00" stroke-width="20" d="M220,410 H240"></path>
+                <path stroke="black" stroke-width="20" d="M200,430 H220"></path>
+                <path stroke="black" stroke-width="20" d="M120,430 H140"></path>
+            </g>
+
+            <g id="note1">
+                <path stroke="#ff4f4f" stroke-width="10" fill="#ff4f4f"
+                      d="M400,250 C400,200 500,200 400,250">
+                </path>
+                <path stroke="#ff4f4f" stroke-width="10"
+                      d="M400,150 V250"></path>
+            </g>
+
+            <g id="note2">
+                <path stroke="#fff94d" stroke-width="10" fill="#fff94d"
+                      d="M100,600 C100,550 200,550 100,600">
+                </path>
+                <path stroke="#fff94d" stroke-width="10"
+                      d="M100,600 V500"></path>
+            </g>
+
+            <g id="note3">
+                <path stroke="#ff00ea" stroke-width="10" fill="#ff00ea"
+                      d="M500,450 C500,400 600,400 500,450">
+                </path>
+                <path stroke="#ff00ea" stroke-width="10"
+                      d="M500,450 V350">
+
+                </path>
+            </g>
+        </svg>
+        <svg id="svg1" viewbox="0 0 700 700">
+
+            <g id="blob1">
+                <path fill="#76aae8" d="M20,20 Q700,20 510,680"></path>
+                <path fill="#87bdff" d="M510,680 Q10,400 20,20"></path>
+                <path fill="#87bdff" d="M50,680 Q700,700 350,10"></path>
+                <path fill="#76aae8" d="M350,10 Q150,20 50,680"></path>
+                <path fill="#76aae8" d="M0,350 Q350,600 600,350"></path>
+                <path fill="#76aae8" d="M0,350 Q350,100 600,350"></path>
+            </g>
+            <g id="blob2">
+                <path fill="#77d2e0" d="M20,500 Q20,0 600,20"></path>
+                <path fill="#87efff" d="M600,20 Q680,680 20,500"></path>
+            </g>
+
+            <g id="stick">
+                <!--line1 -->
+                <path stroke="#db7b14" stroke-width="20" d="M20,430 H320"></path>
+                <path stroke="#ab4d00" stroke-width="20" d="M160,430 H180"></path>
+                <path stroke="#ab4d00" stroke-width="20" d="M100,430 H20"></path>
+                <path stroke="#e45856" stroke-width="20" d="M40,430 H20"></path>
+                <!-- line2 -->
+                <path stroke="#db7b14" stroke-width="20" d="M20,450 H280"></path>
+                <path stroke="#f15c1c" stroke-width="20" d="M160,450 H200"></path>
+                <!-- line3 -->
+                <path stroke="#db7b14" stroke-width="20" d="M20,470 H240"></path>
+                <path stroke="#ab4d00" stroke-width="20" d="M120,470 H140"></path>
+                <path stroke="#ab4d00" stroke-width="20" d="M20,470 H60"></path>
+            </g>
+
+            <g id="parrot">
+                <!-- line1 -->
+                <path stroke="#de1900" stroke-width="20" d="M100,90 H120"></path>
+                <!-- line2 -->
+                <path stroke="#de1900" stroke-width="20" d="M120,110 H200"></path>
+                <!-- line3 -->
+                <path stroke="#de1900" stroke-width="20" d="M140,130 H160"></path>
+                <path stroke="#f53100" stroke-width="20" d="M160,130 H200"></path>
+                <path stroke="#de1900" stroke-width="20" d="M200,130 H240"></path>
+                <!-- line4 -->
+                <path stroke="#de1900" stroke-width="20" d="M120,150 H140"></path>
+                <path stroke="#f53100" stroke-width="20" d="M140,150 H240"></path>
+                <path stroke="#de1900" stroke-width="20" d="M240,150 H260"></path>
+                <!-- line4 -->
+                <path stroke="#de1900" stroke-width="20" d="M100,170 H120"></path>
+                <path stroke="#f53100" stroke-width="20" d="M120,170 H180"></path>
+                <path stroke="white" stroke-width="20" d="M180,170 H240"></path>
+                <path stroke="#ffcc23" stroke-width="20" d="M240,170 H260"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M260,170 H280"></path>
+                <!-- line5 -->
+                <path stroke="#de1900" stroke-width="20" d="M100,190 H120"></path>
+                <path stroke="#f53100" stroke-width="20" d="M120,190 H160"></path>
+                <path stroke="white" stroke-width="20" d="M160,190 H200"></path>
+                <path stroke="black" stroke-width="20" d="M200,190 H220"></path>
+                <path stroke="white" stroke-width="20" d="M220,190 H240"></path>
+                <path stroke="#ffcc23" stroke-width="20" d="M240,190 H260"></path>
+                <path stroke="#ffe39c" stroke-width="20" d="M260,190 H280"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M280,190 H300"></path>
+                <!-- line6 -->
+                <path stroke="#de1900" stroke-width="20" d="M80,210 H100"></path>
+                <path stroke="#f53100" stroke-width="20" d="M100,210 H160"></path>
+                <path stroke="#ffe39c" stroke-width="20" d="M160,210 H180"></path>
+                <path stroke="#ffb485" stroke-width="20" d="M180,210 H200"></path>
+                <path stroke="black" stroke-width="20" d="M200,210 H220"></path>
+                <path stroke="white" stroke-width="20" d="M220,210 H240"></path>
+                <path stroke="#ffcc23" stroke-width="20" d="M240,210 H280"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M280,210 H300"></path>
+                <!-- line7 -->
+                <path stroke="#de1900" stroke-width="20" d="M80,230 H100"></path>
+                <path stroke="#f53100" stroke-width="20" d="M100,230 H160"></path>
+                <path stroke="#ffe39c" stroke-width="20" d="M160,230 H180"></path>
+                <path stroke="#ffb485" stroke-width="20" d="M180,230 H220"></path>
+                <path stroke="white" stroke-width="20" d="M220,230 H240"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M240,230 H300"></path>
+                <!-- line8 -->
+                <path stroke="#de1900" stroke-width="20" d="M80,250 H100"></path>
+                <path stroke="#f53100" stroke-width="20" d="M100,250 H180"></path>
+                <path stroke="#ffe39c" stroke-width="20" d="M180,250 H240"></path>
+                <path stroke="#de1900" stroke-width="20" d="M240,250 H260"></path>
+                <!-- line9 -->
+                <path stroke="#0cb800" stroke-width="20" d="M80,270 H100"></path>
+                <path stroke="#fff423" stroke-width="20" d="M100,270 H120"></path>
+                <path stroke="#f53100" stroke-width="20" d="M120,270 H260"></path>
+                <path stroke="#de1900" stroke-width="20" d="M260,270 H280"></path>
+                <!-- line10 -->
+                <path stroke="#0cb800" stroke-width="20" d="M80,290 H100"></path>
+                <path stroke="#fff423" stroke-width="20" d="M100,290 H140"></path>
+                <path stroke="#f53100" stroke-width="20" d="M140,290 H200"></path>
+                <path stroke="#de1900" stroke-width="20" d="M200,290 H220"></path>
+                <path stroke="#f53100" stroke-width="20" d="M220,290 H280"></path>
+                <path stroke="#de1900" stroke-width="20" d="M280,290 H300"></path>
+                <!-- line11 -->
+                <path stroke="#3a6aff" stroke-width="20" d="M80,310 H100"></path>
+                <path stroke="#83e101" stroke-width="20" d="M100,310 H120"></path>
+                <path stroke="#fff423" stroke-width="20" d="M120,310 H160"></path>
+                <path stroke="#f53100" stroke-width="20" d="M160,310 H200"></path>
+                <path stroke="#de1900" stroke-width="20" d="M200,310 H220"></path>
+                <path stroke="#fff423" stroke-width="20" d="M220,310 H240"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M240,310 H280"></path>
+                <path stroke="#f53100" stroke-width="20" d="M280,310 H300"></path>
+                <path stroke="#de1900" stroke-width="20" d="M300,310 H320"></path>
+                <!-- line12 -->
+                <path stroke="#3a6aff" stroke-width="20" d="M80,330 H100"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M100,330 H120"></path>
+                <path stroke="#83e101" stroke-width="20" d="M120,330 H140"></path>
+                <path stroke="#fff423" stroke-width="20" d="M140,330 H200"></path>
+                <path stroke="#de1900" stroke-width="20" d="M200,330 H220"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M220,330 H240"></path>
+                <path stroke="#fff423" stroke-width="20" d="M240,330 H280"></path>
+                <path stroke="#ff7c2a" stroke-width="20" d="M280,330 H320"></path>
+                <path stroke="#de1900" stroke-width="20" d="M320,330 H340"></path>
+                <!-- line13 -->
+                <path stroke="#3a6aff" stroke-width="20" d="M100,350 H120"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M120,350 H160"></path>
+                <path stroke="#83e101" stroke-width="20" d="M160,350 H220"></path>
+                <path stroke="#de1900" stroke-width="20" d="M220,350 H240"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M240,350 H280"></path>
+                <path stroke="#fff423" stroke-width="20" d="M280,350 H320"></path>
+                <path stroke="#de1900" stroke-width="20" d="M320,350 H340"></path>
+                <!-- line14 -->
+                <path stroke="#8621d9" stroke-width="20" d="M120,370 H160"></path>
+                <path stroke="#63bcff" stroke-width="20" d="M160,370 H240"></path>
+                <path stroke="#de1900" stroke-width="20" d="M240,370 H320"></path>
+                <!-- line15 -->
+                <path stroke="black" stroke-width="20" d="M160,390 H180"></path>
+                <path stroke="#8621d9" stroke-width="20" d="M180,390 H240"></path>
+                <path stroke="black" stroke-width="20" d="M240,390 H260"></path>
+                <path stroke="#8621d9" stroke-width="20" d="M260,390 H280"></path>
+                <!-- line16 -->
+                <path stroke="#611f00" stroke-width="20" d="M140,410 H160"></path>
+                <path stroke="#611f00" stroke-width="20" d="M220,410 H240"></path>
+                <path stroke="black" stroke-width="20" d="M200,430 H220"></path>
+                <path stroke="black" stroke-width="20" d="M120,430 H140"></path>
+            </g>
+
+            <g id="note1">
+                <path stroke="#ff4f4f" stroke-width="10" fill="#ff4f4f"
+                      d="M400,250 C400,200 500,200 400,250">
+                </path>
+                <path stroke="#ff4f4f" stroke-width="10"
+                      d="M400,150 V250"></path>
+            </g>
+            <g id="note2">
+                <path stroke="#fff94d" stroke-width="10" fill="#fff94d"
+                      d="M100,600 C100,550 200,550 100,600">
+                </path>
+                <path stroke="#fff94d" stroke-width="10"
+                      d="M100,600 V500"></path>
+            </g>
+            <g id="note3">
+                <path stroke="#ff00ea" stroke-width="10" fill="#ff00ea"
+                      d="M500,450 C500,400 600,400 500,450">
+                </path>
+                <path stroke="#ff00ea" stroke-width="10"
+                      d="M500,450 V350">
+
+                </path>
+            </g>
+        </svg>
+        <div id="svg2">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <text id="animatedText" x="75%" y="45%" text-anchor="middle">
+                    <tspan></tspan>
+                    <tspan x="75%" dy="1.2em"></tspan>
+                    <tspan x="75%" dy="1.2em"></tspan>
+                </text>
+            </svg>
+        </div>
+    </div>
+    <script src="/js/canary.js"></script>
+
+</body>
+
+
+</html>

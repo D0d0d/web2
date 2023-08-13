@@ -99,12 +99,12 @@ h1, a, div, p {
 .navbar-nav {
     margin: 0;
     display: flex;
-    flex-direction: column; /* Добавьте этот стиль для скрытия ссылок на мобильных устройствах */
+    flex-direction: column; 
 }
 
 .navbar-collapse {
-    width: 100%; /* Добавьте этот стиль для скрытия ссылок на мобильных устройствах */
-    text-align: center; /* Добавьте этот стиль для выравнивания ссылок на мобильных устройствах */
+    width: 100%; 
+    text-align: center; 
 }
 .nav-item {
     margin-left: 3em;
@@ -114,7 +114,7 @@ h1, a, div, p {
 .logo-wrapper {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
@@ -170,7 +170,11 @@ h1, a, div, p {
     flex: 1;
     position: relative;
     min-height: 100vh;
-    margin-bottom:5em;
+    margin-bottom: 5em;
+
+}
+.main {
+    text-align: left;
 }
 footer {
     bottom: 0;
